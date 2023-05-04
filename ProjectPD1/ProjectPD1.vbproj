@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B20911A-9BE9-4466-86B1-ECA392490386}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProjectPD1.My.MyApplication</StartupObject>
+    <RootNamespace>ProjectPD1</RootNamespace>
+    <AssemblyName>ProjectPD1</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProjectPD1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProjectPD1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\CrystalDecisions.Enterprise.Framework\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC\CrystalDecisions.Enterprise.InfoStore\10.2.3600.0__692fbea5521e1304\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="crbahan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crbahan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crcust.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crcust.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crmakanan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crmakanan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crtransaksi.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crtransaksi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Login.Designer.vb">
+      <DependentUpon>Form Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Main Menu.Designer.vb">
+      <DependentUpon>Form Main Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Main Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Data Makanan.Designer.vb">
+      <DependentUpon>Form Data Makanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Data Makanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Data customer.Designer.vb">
+      <DependentUpon>Form Data customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Data customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form About.Designer.vb">
+      <DependentUpon>Form About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Data Bahan.Designer.vb">
+      <DependentUpon>Form Data Bahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Data Bahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan Bahan Baku.Designer.vb">
+      <DependentUpon>Laporan Bahan Baku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan Bahan Baku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan Customer.Designer.vb">
+      <DependentUpon>Laporan Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan Makanan.Designer.vb">
+      <DependentUpon>Laporan Makanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan Makanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan Transaksi.Designer.vb">
+      <DependentUpon>Laporan Transaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan Transaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Form Transaksi .Designer.vb">
+      <DependentUpon>Form Transaksi .vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form Transaksi .vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="crbahan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crbahan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crcust.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crcust.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crmakanan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crmakanan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crtransaksi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crtransaksi.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Data Bahan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Data Bahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Data customer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Data customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Data Makanan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Data Makanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Main Menu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Main Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Bahan Baku.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Laporan Bahan Baku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Customer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Laporan Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Makanan.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Laporan Makanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan Transaksi.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Laporan Transaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Transaksi .resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form Transaksi .vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mockup-bakery-bread-pastry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicsArt_10-15-07.10.56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
